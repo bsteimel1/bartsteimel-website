@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTPG7VW96W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NTPG7VW96W');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bart Steimel — Biography</title>
+<link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital@0;1&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .bio-page-hero {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem 3rem;
+  }
+  .bio-page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/hero-bg.jpg') center top / cover no-repeat;
+    opacity: 0.35;
+    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+  }
+  .bio-page-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,7,4,0.5) 0%, rgba(26,16,8,0.85) 70%, #1a1008 100%);
+  }
+  .bio-page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 6rem;
+  }
+  .bio-page-hero-eyebrow {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 1rem;
+  }
+  .bio-page-hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .bio-page-hero-name em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .bio-page-hero-sub {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: var(--light-brown);
+    font-style: italic;
+  }
+
+  .bio-full {
+    background: linear-gradient(180deg, #1a1008 0%, #0a0704 100%);
+    padding: 5rem 2rem 6rem;
+  }
+  .bio-full-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .bio-full-inner p {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--cream);
+    margin-bottom: 1.75rem;
+    opacity: 0.92;
+  }
+  .bio-full-inner p.bio-pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-style: italic;
+    color: var(--gold);
+    border-left: 2px solid var(--rust);
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    line-height: 1.6;
+    opacity: 1;
+  }
+  .bio-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--light-brown);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: color 0.2s;
+  }
+  .bio-back-link:hover { color: var(--gold); }
+  .bio-back-link::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+  @media (max-width: 600px) {
+    .bio-page-hero { min-height: 45vh; padding: 3rem 1.25rem 2rem; }
+    .bio-full { padding: 3rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Bart Steimel</div>
+  <ul class="nav-links">
+    <li><a href="index.html#listen">Listen</a></li>
+    <li><a href="index.html#catalog">Catalog</a></li>
+    <li><a href="index.html#bio">About</a></li>
+    <li><a href="index.html#follow">Follow</a></li>
+    <li><a href="videos.html">Videos</a></li>
+  </ul>
+  <a href="videos.html" class="mobile-videos">Videos</a>
+</nav>
+
+<section class="bio-page-hero">
+  <div class="bio-page-hero-content">
+    <p class="bio-page-hero-eyebrow">Singer &nbsp;·&nbsp; Songwriter &nbsp;·&nbsp; Virginia</p>
+    <h1 class="bio-page-hero-name">Bart<br><em>Steimel</em></h1>
+    <p class="bio-page-hero-sub">Writing songs since 15. Finally letting them out.</p>
+  </div>
+</section>
+
+<section class="bio-full">
+  <div class="bio-full-inner">
+    <a href="index.html#bio" class="bio-back-link">Back to Home</a>
+
+    <p>Bart Steimel is a Virginia-based singer-songwriter whose music is rooted in real life—family, memory, and the quiet weight of lived experience. Born in Washington, D.C. and raised in Maryland, his sense of place was shaped not only by the East Coast, but by long stretches of time spent in rural Kansas, where his parents were raised in the small town of Spearville. Much of his extended family remained in southwestern Kansas, and as a child he spent a month there every other summer—experiences that left a lasting imprint on the way he sees people, place, and story.</p>
+
+    <p>He began playing guitar at 13 and writing songs at 15, developing his style without formal training. Left-handed but playing right-handed, and never using a pick, he built his sound early—strumming and fingerpicking with his bare hands, learning mostly on his own with some early guidance from his brother.</p>
+
+    <p>As a teenager, Bart was already experimenting with multitrack recording, bouncing tracks between cassette recorders long before home studios made it accessible. That same self-driven, hands-on approach still defines his process today.</p>
+
+    <p>He rarely sits down intending to write a song. Instead, songs arrive unexpectedly—often at the wrong place and time—and come together almost all at once. His writing is deeply personal—drawn from people he knows and experiences he's lived. Influenced by artists like The Beatles, Bob Dylan, John Prine, and Bruce Springsteen, he developed a strong belief that lyrics are what make or break a song.</p>
+
+    <p class="bio-pull-quote">"Every song comes from somewhere. There's always a story behind it."</p>
+
+    <p>For Bart, songwriting has always been something closer to necessity than craft. Each song carries a backstory—often something too personal to say directly. Some songs are disguised to protect the people in them, or even himself. Many can be heard two ways: the version listeners hear on the surface, and a deeper meaning that only he fully understands.</p>
+
+    <p>Over the years, life often took priority. There were long stretches where he didn't play or write—raising a family of eight children and building a 42-year career in technology. But music never fully left. Some songs stayed with him quietly for years, including a few so personal he once thought he'd never share—or even listen to again.</p>
+
+    <p>What began as a way to make songs available to his children and grandchildren has grown into a much larger body of work. He has written roughly 150 songs, many of his most meaningful ones for his family—one for each child and grandchild—capturing moments, personalities, and memories along the way.</p>
+
+    <p>Today, Bart records primarily in his home studio, often playing all the instruments himself. His catalog spans both reflective adult songwriting and a growing collection of children's songs, though at his core, he sees himself first as a songwriter for adult audiences.</p>
+
+    <p>Family remains at the center of everything. His extended family is large and close-knit—gatherings can easily reach 70 people, all family—whether at their home for the holidays or during annual beach trips. Two of his daughters now help on the business side, making the music a shared family effort.</p>
+
+    <p>As a young man, Bart once imagined becoming a well-known artist. Today, retired and looking back, he feels differently.</p>
+
+    <p class="bio-pull-quote">"I'm happy to be anonymous."</p>
+
+    <p>Some of his songs still feel like secrets—stories told just clearly enough to be heard, but guarded enough to protect what's underneath. And in some cases, the truest meaning behind them is something only he will ever know—stories shaped as much by the life he built in Maryland and Virginia as by the summers that stayed with him in Kansas.</p>
+
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(201,145,42,0.2); display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="index.html#catalog" class="btn-primary">Explore the Catalog</a>
+      <a href="index.html#listen" class="btn-outline">Listen Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Bart Steimel &nbsp;·&nbsp; All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

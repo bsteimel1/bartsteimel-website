@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Backup files
+*.bak
+*.bak2
+
+# Working folders not part of the site
+Cover Art Compressed for Claude/
+
+# Spreadsheets / local notes
+*.xlsx
+*.csv

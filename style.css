@@ -1,0 +1,775 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #f2ead8;
+    --warm-white: #faf6ee;
+    --brown: #3b2a1a;
+    --rust: #b8450a;
+    --gold: #c9912a;
+    --dark: #1a1008;
+    --mid: #6b4c2a;
+    --light-brown: #9e7c4f;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--dark);
+    color: var(--cream);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 4rem 2rem;
+    background: 
+      radial-gradient(ellipse at 20% 50%, rgba(184,69,10,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,145,42,0.1) 0%, transparent 50%),
+      linear-gradient(180deg, #0d0804 0%, #1a1008 40%, #2a1a0a 100%);
+  }
+
+  .hero-eyebrow {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 1s ease 0.3s forwards;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(3.5rem, 10vw, 8rem);
+    font-weight: 700;
+    line-height: 0.9;
+    color: var(--cream);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeUp 1s ease 0.6s forwards;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-tagline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: var(--light-brown);
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 1s ease 0.9s forwards;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeUp 1s ease 1.2s forwards;
+  }
+
+  .btn-primary {
+    background: var(--rust);
+    color: var(--cream);
+    padding: 0.85rem 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: #d4520d; transform: translateY(-2px); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--cream);
+    padding: 0.85rem 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(242,234,216,0.3);
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 1s ease 2s forwards;
+  }
+  .scroll-hint span {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 0.5rem;
+  }
+  .scroll-hint::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--mid), transparent);
+    margin: 0 auto;
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+
+  /* ── FEATURED SONG ── */
+  .featured {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #1a1008 0%, #0f0905 100%);
+    position: relative;
+  }
+
+  .featured::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .section-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(184,69,10,0.3);
+  }
+
+  .featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    .featured-card { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  .featured-art {
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #2a1a0a, #1a1008);
+    border: 1px solid rgba(201,145,42,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-art::before {
+    content: '☘';
+    font-size: 8rem;
+    opacity: 0.06;
+    position: absolute;
+  }
+
+  .featured-art-inner {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .featured-art-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .featured-art-artist {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .featured-info {}
+
+  .featured-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-style: italic;
+    line-height: 1.1;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+
+  .featured-subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-story {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    color: var(--light-brown);
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .featured-dedication {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rust);
+  }
+
+  .stream-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(242,234,216,0.05);
+    border: 1px solid rgba(242,234,216,0.15);
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+  .stream-btn:hover { background: rgba(201,145,42,0.1); border-color: var(--gold); color: var(--gold); }
+  .stream-btn svg { flex-shrink: 0; }
+
+  /* ── LISTEN ── */
+  .listen {
+    padding: 6rem 2rem;
+    background: #0a0704;
+    position: relative;
+  }
+  .listen::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,145,42,0.3), transparent);
+  }
+
+  .listen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .listen-card {
+    background: rgba(242,234,216,0.03);
+    border: 1px solid rgba(242,234,216,0.08);
+    padding: 2rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .listen-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(184,69,10,0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .listen-card:hover { border-color: rgba(201,145,42,0.3); transform: translateY(-3px); }
+  .listen-card:hover::before { opacity: 1; }
+
+  .listen-card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .listen-card-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+
+  .listen-card-desc {
+    font-size: 0.8rem;
+    color: var(--mid);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .listen-card-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .listen-card-link:hover { color: var(--rust); }
+  .listen-card-link.coming-soon { color: var(--mid); cursor: default; }
+
+  /* ── BIO ── */
+  .bio {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0a0704 0%, #1a1008 100%);
+    position: relative;
+  }
+  .bio::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184,69,10,0.4), transparent);
+  }
+
+  .bio-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bio-photo-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2a1a0a, #1a1008);
+    border: 2px solid rgba(201,145,42,0.3);
+    margin: 0 auto 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    opacity: 0.4;
+  }
+
+  .bio-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.8;
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+  }
+
+  .bio-text em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .bio-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .bio-number {
+    text-align: center;
+  }
+
+  .bio-number-val {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+
+  .bio-number-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+
+  /* ── FOLLOW ── */
+  .follow {
+    padding: 6rem 2rem;
+    background: #0a0704;
+    text-align: center;
+    position: relative;
+  }
+  .follow::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,145,42,0.3), transparent);
+  }
+
+  .follow-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-style: italic;
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+
+  .follow-sub {
+    font-size: 0.9rem;
+    color: var(--mid);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  .follow-form {
+    display: flex;
+    gap: 0;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .follow-input {
+    flex: 1;
+    padding: 0.9rem 1.2rem;
+    background: rgba(242,234,216,0.05);
+    border: 1px solid rgba(242,234,216,0.15);
+    border-right: none;
+    color: var(--cream);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .follow-input::placeholder { color: var(--mid); }
+  .follow-input:focus { border-color: rgba(201,145,42,0.5); }
+
+  .follow-submit {
+    padding: 0.9rem 1.5rem;
+    background: var(--rust);
+    border: 1px solid var(--rust);
+    color: var(--cream);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .follow-submit:hover { background: #d4520d; }
+
+  .follow-note {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: rgba(107,76,42,0.6);
+    font-style: italic;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background: var(--dark);
+    border-top: 1px solid rgba(242,234,216,0.05);
+  }
+
+  footer p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(107,76,42,0.5);
+  }
+
+
+  /* ── CATALOG ── */
+  .catalog {
+    padding: 6rem 2rem;
+    background: #0d0906;
+    position: relative;
+  }
+  .catalog::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,145,42,0.3), transparent);
+  }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  .catalog-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background: #1a1008;
+  }
+  .catalog-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background: #1a1008;
+    transition: transform 0.2s;
+  }
+  .catalog-item:hover { transform: scale(1.03); }
+  .catalog-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .catalog-item:hover img { transform: scale(1.05); }
+  .catalog-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.6rem;
+    pointer-events: none;
+  }
+  .catalog-item:hover .catalog-overlay { opacity: 1; }
+  .catalog-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    color: var(--cream);
+    line-height: 1.3;
+  }
+  .catalog-year {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.6rem;
+    color: var(--gold);
+    margin-top: 0.2rem;
+  }
+
+  /* Modal */
+  .catalog-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 500;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog-modal.active { display: flex; }
+  .catalog-modal-inner {
+    background: #1a1008;
+    border: 1px solid rgba(201,145,42,0.3);
+    padding: 2.5rem;
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background: none;
+    border: none;
+    color: var(--mid);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+  }
+  .modal-year {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--mid);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .modal-listen-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.5rem;
+    background: rgba(252,60,68,0.1);
+    border: 1px solid rgba(252,60,68,0.4);
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+  }
+  .modal-listen-btn:hover { background: rgba(252,60,68,0.2); }
+  .modal-service-btn {
+    padding: 0.4rem 0.8rem;
+    background: rgba(242,234,216,0.05);
+    border: 1px solid rgba(242,234,216,0.15);
+    color: var(--light-brown);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+  }
+  .modal-service-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+  }
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes scrollLine {
+    0%, 100% { transform: scaleY(1); opacity: 1; }
+    50% { transform: scaleY(0.5); opacity: 0.3; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(10,7,4,0.9), transparent);
+    backdrop-filter: blur(4px);
+  }
+
+  .nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--cream);
+    opacity: 0.7;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--light-brown);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  .mobile-videos {
+    display: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--light-brown);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .mobile-videos:hover { color: var(--gold); }
+
+  @media (max-width: 500px) {
+    .nav-links { display: none; }
+    .mobile-videos { display: inline-block; }
+    .follow-form { flex-direction: column; }
+    .follow-input { border-right: 1px solid rgba(242,234,216,0.15); border-bottom: none; }
+    .bio { padding: 4rem 1.25rem; }
+    .bio-text { font-size: 1rem; }
+    .bio .btn-outline { display: block; text-align: center; margin-top: 2rem; }
+  }
