@@ -151,7 +151,7 @@
 
   /* ── FEATURED SONG ── */
   .featured {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 3rem;
     background: linear-gradient(180deg, #1a1008 0%, #0f0905 100%);
     position: relative;
   }
