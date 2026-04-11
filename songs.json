@@ -189,6 +189,13 @@
     "spotify": "https://open.spotify.com/track/4mNDVovHLixAEUNPzaTmIn?si=322aaac53bb54712"
   },
   {
+    "title": "Blood Money & Alcohol",
+    "year": "2003",
+    "image": "images/blood-money-and-alcohol.png",
+    "appleMusic": "https://music.apple.com/us/album/blood-money-and-alcohol-single/1892364417",
+    "spotify": "https://open.spotify.com/track/2phkdjdJxeNQYeem5puo9P?si=a6aa89980bd54255"
+  },
+  {
     "title": "Nowhere Into the Night",
     "year": "2003",
     "image": "images/nowhere-into-the-night.jpg",
@@ -397,6 +404,13 @@
     "image": "images/missouri.jpg",
     "appleMusic": "https://music.apple.com/us/album/missouri/1850355405?i=1850355406",
     "spotify": "https://open.spotify.com/track/1kYZXRw2McydBpCJTUyc21?si=be0476aef5654242"
+  },
+  {
+    "title": "Moving On",
+    "year": "2007",
+    "image": "images/moving-on.png",
+    "appleMusic": "https://music.apple.com/us/album/moving-on-single/1892672723",
+    "spotify": "https://open.spotify.com/track/4HlKMHLLSEc6ZnzHqD2HWR?si=1d4d1a80e47e444d"
   },
   {
     "title": "Mostly",
