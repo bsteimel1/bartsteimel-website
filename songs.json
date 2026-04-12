@@ -1,17 +1,17 @@
 [
   {
-    "title": "Don't Stand On The Railroad Track",
-    "year": "1975",
-    "image": "images/dont-stand-on-the-railroad-track.jpg",
-    "appleMusic": "https://music.apple.com/us/album/dont-stand-on-the-railroad-track/1835125641?i=1835125642",
-    "spotify": "https://open.spotify.com/track/7lTwHjCADYzyAuS02b7ulA?si=cb4958e3a8bc4f7e"
-  },
-  {
     "title": "Oh Annemarie!",
     "year": "1975",
     "image": "images/oh-annemarie.jpg",
     "appleMusic": "https://music.apple.com/us/album/oh-annemarie/1850795655?i=1850795656",
     "spotify": "https://open.spotify.com/track/7v1Sf9WYNiYrd5xbQN99DD?si=f7ef782fbcb14cd4"
+  },
+  {
+    "title": "Don't Stand On The Railroad Track",
+    "year": "1975",
+    "image": "images/dont-stand-on-the-railroad-track.jpg",
+    "appleMusic": "https://music.apple.com/us/album/dont-stand-on-the-railroad-track/1835125641?i=1835125642",
+    "spotify": "https://open.spotify.com/track/7lTwHjCADYzyAuS02b7ulA?si=cb4958e3a8bc4f7e"
   },
   {
     "title": "Coming Loose At The Ends",
@@ -49,13 +49,6 @@
     "spotify": "https://open.spotify.com/track/4dcTz4P0GrSa5hzghI8BWh?si=93a4ba51f0f949b9"
   },
   {
-    "title": "Snow",
-    "year": "1977",
-    "image": "images/snow.jpg",
-    "appleMusic": "https://music.apple.com/us/album/snow/1848565804?i=1848565805",
-    "spotify": "https://open.spotify.com/track/4dMe3wXr9DBzkiNJiSPedt?si=405f37e9d37546f1"
-  },
-  {
     "title": "The Kitty Song",
     "year": "1977",
     "image": "images/the-kitty-song.jpg",
@@ -63,25 +56,11 @@
     "spotify": "https://open.spotify.com/track/2REWSvzN6jOhMfHTOhMM28?si=07b71125ae6e4c30"
   },
   {
-    "title": "Baby Gone Blues",
-    "year": "1978",
-    "image": "images/baby-gone-blues.jpg",
-    "appleMusic": "https://music.apple.com/us/album/baby-gone-blues/1872203193?i=1872203194",
-    "spotify": "https://open.spotify.com/track/4v4KFa8FjXQ72x8oBT8j5n?si=82f19e0388ae4476"
-  },
-  {
-    "title": "Horned Toad Song",
-    "year": "1978",
-    "image": "images/horned-toad-song.jpg",
-    "appleMusic": "https://music.apple.com/us/album/horned-toad-song/1839058237?i=1839058238",
-    "spotify": "https://open.spotify.com/track/1cSyEElni879rDKJy4gNZd?si=947e10cc71b142c1"
-  },
-  {
-    "title": "Lulabelle",
-    "year": "1978",
-    "image": "images/lulabelle.jpg",
-    "appleMusic": "https://music.apple.com/us/album/lulabelle/1827606739?i=1827606740",
-    "spotify": "https://open.spotify.com/track/6KyJM1YvkUeSGP9f79YQV1?si=c8493bb4455e47ce"
+    "title": "Snow",
+    "year": "1977",
+    "image": "images/snow.jpg",
+    "appleMusic": "https://music.apple.com/us/album/snow/1848565804?i=1848565805",
+    "spotify": "https://open.spotify.com/track/4dMe3wXr9DBzkiNJiSPedt?si=405f37e9d37546f1"
   },
   {
     "title": "My Chillum Piano",
@@ -91,18 +70,39 @@
     "spotify": "https://open.spotify.com/track/1cJo31EI9OxfZ7oRADSynU?si=d866b0d9948d47aa"
   },
   {
-    "title": "Return Me to Kansas",
-    "year": "1978",
-    "image": "images/return-me-to-kansas.jpg",
-    "appleMusic": "https://music.apple.com/us/album/return-me-to-kansas/1880175728?i=1880175729",
-    "spotify": "https://open.spotify.com/track/73pOyofeiEGgxp7BJoRbw0?si=47da40cd783d4932"
-  },
-  {
     "title": "The Golden Door",
     "year": "1978",
     "image": "images/the-golden-door.jpg",
     "appleMusic": "https://music.apple.com/us/album/the-golden-door/1872203140?i=1872203141",
     "spotify": "https://open.spotify.com/track/4bYnWCiDzTZTiDYknGMuHE?si=82f6ba3bde064103"
+  },
+  {
+    "title": "Baby Gone Blues",
+    "year": "1978",
+    "image": "images/baby-gone-blues.jpg",
+    "appleMusic": "https://music.apple.com/us/album/baby-gone-blues/1872203193?i=1872203194",
+    "spotify": "https://open.spotify.com/track/4v4KFa8FjXQ72x8oBT8j5n?si=82f19e0388ae4476"
+  },
+  {
+    "title": "Lulabelle",
+    "year": "1978",
+    "image": "images/lulabelle.jpg",
+    "appleMusic": "https://music.apple.com/us/album/lulabelle/1827606739?i=1827606740",
+    "spotify": "https://open.spotify.com/track/6KyJM1YvkUeSGP9f79YQV1?si=c8493bb4455e47ce"
+  },
+  {
+    "title": "Horned Toad Song",
+    "year": "1978",
+    "image": "images/horned-toad-song.jpg",
+    "appleMusic": "https://music.apple.com/us/album/horned-toad-song/1839058237?i=1839058238",
+    "spotify": "https://open.spotify.com/track/1cSyEElni879rDKJy4gNZd?si=947e10cc71b142c1"
+  },
+  {
+    "title": "Return Me to Kansas",
+    "year": "1978",
+    "image": "images/return-me-to-kansas.jpg",
+    "appleMusic": "https://music.apple.com/us/album/return-me-to-kansas/1880175728?i=1880175729",
+    "spotify": "https://open.spotify.com/track/73pOyofeiEGgxp7BJoRbw0?si=47da40cd783d4932"
   },
   {
     "title": "Let Me Go",
@@ -148,7 +148,7 @@
   },
   {
     "title": "Jillian's Song",
-    "year": "1989",
+    "year": "1988",
     "image": "images/jillians-song.jpg",
     "appleMusic": "https://music.apple.com/us/album/jillians-song/1847351181?i=1847351182",
     "spotify": "https://open.spotify.com/track/4xDWaE2WmV36s1oPKNpwnn?si=29b036a00a7e43ce"
@@ -182,20 +182,6 @@
     "spotify": "https://open.spotify.com/track/168H1MHrq0aVykXxTvD2I8?si=015f5e1ea46d4a75"
   },
   {
-    "title": "My Little Caroline",
-    "year": "2003",
-    "image": "images/my-little-caroline.jpg",
-    "appleMusic": "https://music.apple.com/us/album/my-little-caroline/1882083155?i=1882083156",
-    "spotify": "https://open.spotify.com/track/4mNDVovHLixAEUNPzaTmIn?si=322aaac53bb54712"
-  },
-  {
-    "title": "Blood Money & Alcohol",
-    "year": "2003",
-    "image": "images/blood-money-and-alcohol.png",
-    "appleMusic": "https://music.apple.com/us/album/blood-money-and-alcohol-single/1892364417",
-    "spotify": "https://open.spotify.com/track/2phkdjdJxeNQYeem5puo9P?si=a6aa89980bd54255"
-  },
-  {
     "title": "Nowhere Into the Night",
     "year": "2003",
     "image": "images/nowhere-into-the-night.jpg",
@@ -208,6 +194,20 @@
     "image": "images/working-daddy.jpg",
     "appleMusic": "https://music.apple.com/us/album/working-daddy/1822769944?i=1822769945",
     "spotify": "https://open.spotify.com/track/3a93he3LaRfCZRf6lQ2EGp?si=11f60e75164743ad"
+  },
+  {
+    "title": "My Little Caroline",
+    "year": "2003",
+    "image": "images/my-little-caroline.jpg",
+    "appleMusic": "https://music.apple.com/us/album/my-little-caroline/1882083155?i=1882083156",
+    "spotify": "https://open.spotify.com/track/4mNDVovHLixAEUNPzaTmIn?si=322aaac53bb54712"
+  },
+  {
+    "title": "Blood Money & Alcohol",
+    "year": "2003",
+    "image": "images/blood-money-and-alcohol.png",
+    "appleMusic": "https://music.apple.com/us/album/blood-money-and-alcohol-single/1892364417",
+    "spotify": "https://open.spotify.com/track/2phkdjdJxeNQYeem5puo9P?si=a6aa89980bd54255"
   },
   {
     "title": "We Were Too Young",
@@ -231,13 +231,6 @@
     "spotify": "https://open.spotify.com/track/2GBLoEWYtNwK0mFtU5C7Cp?si=ef78af273b924db8"
   },
   {
-    "title": "Wal-Mart Blue",
-    "year": "2006",
-    "image": "images/wal-mart-blue.jpg",
-    "appleMusic": "https://music.apple.com/us/album/wal-mart-blue/1848895745?i=1848896016",
-    "spotify": "https://open.spotify.com/track/7c72ptuaYOkipLMnx8ABsi?si=356b1bbf218c4ca4"
-  },
-  {
     "title": "Westbound",
     "year": "2006",
     "image": "images/westbound.jpg",
@@ -245,25 +238,11 @@
     "spotify": "https://open.spotify.com/track/2KFBxYUJ8M9TZAwDrzHtSF?si=7467e3d1f33a48b3"
   },
   {
-    "title": "1980 One More Time",
-    "year": "2007",
-    "image": "images/1980-one-more-time.jpg",
-    "appleMusic": "https://music.apple.com/us/album/1980-one-more-time/1833349806?i=1833349807",
-    "spotify": "https://open.spotify.com/track/10gc8kGMFX4WGgz6xrhvma?si=3186849a31ac4578"
-  },
-  {
-    "title": "Jubilee Nine",
-    "year": "2007",
-    "image": "images/jubilee-nine.jpg",
-    "appleMusic": "https://music.apple.com/us/album/jubilee-9/1850798669?i=1850798880",
-    "spotify": "https://open.spotify.com/track/5MdKsfbNcuXb5Qp0nJ00dA?si=1a842b830d2944ea"
-  },
-  {
-    "title": "Resolution Day",
-    "year": "2007",
-    "image": "images/resolution-day.jpg",
-    "appleMusic": "https://music.apple.com/us/album/resolution-day/1875719202?i=1875719203",
-    "spotify": "https://open.spotify.com/track/7JtWyWKUVfxKx8VBRDk1TN?si=84a8531c34f248ea"
+    "title": "Wal-Mart Blue",
+    "year": "2006",
+    "image": "images/wal-mart-blue.jpg",
+    "appleMusic": "https://music.apple.com/us/album/wal-mart-blue/1848895745?i=1848896016",
+    "spotify": "https://open.spotify.com/track/7c72ptuaYOkipLMnx8ABsi?si=356b1bbf218c4ca4"
   },
   {
     "title": "Song of Joy",
@@ -273,11 +252,11 @@
     "spotify": "https://open.spotify.com/track/5u8ZEtTTEL5PiLPAKa1MQm?si=0c39d5f338834719"
   },
   {
-    "title": "Tommy's Song (The Promise)",
+    "title": "Smile for Me",
     "year": "2007",
-    "image": "images/tommys-song-the-promise.jpg",
-    "appleMusic": "https://music.apple.com/us/album/tommys-song-the-promise/1857697239?i=1857697240",
-    "spotify": "https://open.spotify.com/track/0045ti7NUVvb0EsQjTxzDL?si=46c6f02679f640fd"
+    "image": "images/smile-for-me.jpg",
+    "appleMusic": "https://music.apple.com/us/album/smile-for-me/1827690530?i=1827690533",
+    "spotify": "https://open.spotify.com/track/2tKY498XqVeT0h8ejdOLcA?si=f7b51737cff24fd4"
   },
   {
     "title": "Writing Me a Letter",
@@ -287,11 +266,46 @@
     "spotify": "https://open.spotify.com/track/6crmfhy5EZ1Q7ddXekuoKj?si=2780a2e0dd1f464a"
   },
   {
-    "title": "Are The Angels On Their Way",
-    "year": "2008",
-    "image": "images/are-the-angels-on-their-way.jpg",
-    "appleMusic": "https://music.apple.com/us/album/are-the-angels-on-their-way/1872203048?i=1872203049",
-    "spotify": "https://open.spotify.com/track/6Oe3AM9tBkLdlpMVOUzO1v?si=b6a7cb92412140bf"
+    "title": "1980 One More Time",
+    "year": "2007",
+    "image": "images/1980-one-more-time.jpg",
+    "appleMusic": "https://music.apple.com/us/album/1980-one-more-time/1833349806?i=1833349807",
+    "spotify": "https://open.spotify.com/track/10gc8kGMFX4WGgz6xrhvma?si=3186849a31ac4578"
+  },
+  {
+    "title": "Resolution Day",
+    "year": "2007",
+    "image": "images/resolution-day.jpg",
+    "appleMusic": "https://music.apple.com/us/album/resolution-day/1875719202?i=1875719203",
+    "spotify": "https://open.spotify.com/track/7JtWyWKUVfxKx8VBRDk1TN?si=84a8531c34f248ea"
+  },
+  {
+    "title": "Jubilee Nine",
+    "year": "2007",
+    "image": "images/jubilee-nine.jpg",
+    "appleMusic": "https://music.apple.com/us/album/jubilee-9/1850798669?i=1850798880",
+    "spotify": "https://open.spotify.com/track/5MdKsfbNcuXb5Qp0nJ00dA?si=1a842b830d2944ea"
+  },
+  {
+    "title": "Missouri",
+    "year": "2007",
+    "image": "images/missouri.jpg",
+    "appleMusic": "https://music.apple.com/us/album/missouri/1850355405?i=1850355406",
+    "spotify": "https://open.spotify.com/track/1kYZXRw2McydBpCJTUyc21?si=be0476aef5654242"
+  },
+  {
+    "title": "Moving On",
+    "year": "2007",
+    "image": "images/moving-on.png",
+    "appleMusic": "https://music.apple.com/us/album/moving-on-single/1892672723",
+    "spotify": "https://open.spotify.com/track/4HlKMHLLSEc6ZnzHqD2HWR?si=1d4d1a80e47e444d"
+  },
+  {
+    "title": "Tommy's Song (The Promise)",
+    "year": "2007",
+    "image": "images/tommys-song-the-promise.jpg",
+    "appleMusic": "https://music.apple.com/us/album/tommys-song-the-promise/1857697239?i=1857697240",
+    "spotify": "https://open.spotify.com/track/0045ti7NUVvb0EsQjTxzDL?si=46c6f02679f640fd"
   },
   {
     "title": "Godforsaken Town",
@@ -299,6 +313,13 @@
     "image": "images/godforsaken-town.jpg",
     "appleMusic": "https://music.apple.com/us/album/godforsaken-town/1853095528?i=1853095530",
     "spotify": "https://open.spotify.com/track/2CJFJ9U8XQEw4hjgX8RW2p?si=419f2e2e035f4aa6"
+  },
+  {
+    "title": "Are The Angels On Their Way",
+    "year": "2008",
+    "image": "images/are-the-angels-on-their-way.jpg",
+    "appleMusic": "https://music.apple.com/us/album/are-the-angels-on-their-way/1872203048?i=1872203049",
+    "spotify": "https://open.spotify.com/track/6Oe3AM9tBkLdlpMVOUzO1v?si=b6a7cb92412140bf"
   },
   {
     "title": "I Am Alive!",
@@ -329,20 +350,6 @@
     "spotify": "https://open.spotify.com/track/54TCW1c2MPWYDHwg4Csszo?si=ac9a6f1cf6704972"
   },
   {
-    "title": "Drive Away",
-    "year": "2010",
-    "image": "images/drive-away.jpg",
-    "appleMusic": "https://music.apple.com/us/album/drive-away/1835320536?i=1835320537",
-    "spotify": "https://open.spotify.com/track/7kzbUw5Z5bZMz6crbdjLMI?si=c23c233664274d10"
-  },
-  {
-    "title": "Go",
-    "year": "2010",
-    "image": "images/go.jpg",
-    "appleMusic": "https://music.apple.com/us/album/go/1875719129?i=1875719130",
-    "spotify": "https://open.spotify.com/track/0qAmozmAEhqZnYlQl3gZ85?si=64373eebf0d4433e"
-  },
-  {
     "title": "Skin Deep",
     "year": "2010",
     "image": "images/skin-deep.jpg",
@@ -350,11 +357,11 @@
     "spotify": "https://open.spotify.com/track/1k5LfuK5Sq0RkCVofgXjou?si=54402df6895f4ecb"
   },
   {
-    "title": "Smile for Me",
+    "title": "Go",
     "year": "2010",
-    "image": "images/smile-for-me.jpg",
-    "appleMusic": "https://music.apple.com/us/album/smile-for-me/1827690530?i=1827690533",
-    "spotify": "https://open.spotify.com/track/2tKY498XqVeT0h8ejdOLcA?si=f7b51737cff24fd4"
+    "image": "images/go.jpg",
+    "appleMusic": "https://music.apple.com/us/album/go/1875719129?i=1875719130",
+    "spotify": "https://open.spotify.com/track/0qAmozmAEhqZnYlQl3gZ85?si=64373eebf0d4433e"
   },
   {
     "title": "The Only Friend I Know",
@@ -369,6 +376,41 @@
     "image": "images/youve-come-a-long-way.jpg",
     "appleMusic": "https://music.apple.com/us/album/youve-come-a-long-way/1825664902?i=1825664903",
     "spotify": "https://open.spotify.com/track/5dsX8ahOopmmCo69nEz7Sj?si=0e30b3f22b2f44f4"
+  },
+  {
+    "title": "Trail",
+    "year": "2010",
+    "image": "images/trail.jpg",
+    "appleMusic": "https://music.apple.com/us/album/trail/1855309460?i=1855309461",
+    "spotify": "https://open.spotify.com/track/1L1IA59UpVlhltYPRHGLUG?si=ea549c5ee1b0480c"
+  },
+  {
+    "title": "Drive Away",
+    "year": "2010",
+    "image": "images/drive-away.jpg",
+    "appleMusic": "https://music.apple.com/us/album/drive-away/1835320536?i=1835320537",
+    "spotify": "https://open.spotify.com/track/7kzbUw5Z5bZMz6crbdjLMI?si=c23c233664274d10"
+  },
+  {
+    "title": "Hold On You",
+    "year": "2011",
+    "image": "images/hold-on-you.jpg",
+    "appleMusic": "https://music.apple.com/us/album/hold-on-you/1828191979?i=1828191980",
+    "spotify": "https://open.spotify.com/track/7Ju6Ox29ixjpGyYjebFZJX?si=4031abe0641e410a"
+  },
+  {
+    "title": "Mostly",
+    "year": "2011",
+    "image": "images/mostly.jpg",
+    "appleMusic": "https://music.apple.com/us/album/mostly/1857711782?i=1857711783",
+    "spotify": "https://open.spotify.com/track/0nQslygjKp7YNHReB7q0cM?si=e34cc572ff2243b6"
+  },
+  {
+    "title": "Wedding Day",
+    "year": "2011",
+    "image": "images/wedding-day.jpg",
+    "appleMusic": "https://music.apple.com/us/album/wedding-day/1872203339?i=1872203340",
+    "spotify": "https://open.spotify.com/track/2jktCTlGkoOLksEzob1PZY?si=0f6fbe5668a64f93"
   },
   {
     "title": "California Waits",
@@ -392,46 +434,11 @@
     "spotify": "https://open.spotify.com/track/4Br2vrjoDBHm4UfRMUcxVv?si=29e8331114634064"
   },
   {
-    "title": "Hold On You",
-    "year": "2011",
-    "image": "images/hold-on-you.jpg",
-    "appleMusic": "https://music.apple.com/us/album/hold-on-you/1828191979?i=1828191980",
-    "spotify": "https://open.spotify.com/track/7Ju6Ox29ixjpGyYjebFZJX?si=4031abe0641e410a"
-  },
-  {
-    "title": "Missouri",
-    "year": "2011",
-    "image": "images/missouri.jpg",
-    "appleMusic": "https://music.apple.com/us/album/missouri/1850355405?i=1850355406",
-    "spotify": "https://open.spotify.com/track/1kYZXRw2McydBpCJTUyc21?si=be0476aef5654242"
-  },
-  {
-    "title": "Moving On",
-    "year": "2007",
-    "image": "images/moving-on.png",
-    "appleMusic": "https://music.apple.com/us/album/moving-on-single/1892672723",
-    "spotify": "https://open.spotify.com/track/4HlKMHLLSEc6ZnzHqD2HWR?si=1d4d1a80e47e444d"
-  },
-  {
-    "title": "Mostly",
-    "year": "2011",
-    "image": "images/mostly.jpg",
-    "appleMusic": "https://music.apple.com/us/album/mostly/1857711782?i=1857711783",
-    "spotify": "https://open.spotify.com/track/0nQslygjKp7YNHReB7q0cM?si=e34cc572ff2243b6"
-  },
-  {
-    "title": "Wedding Day",
-    "year": "2011",
-    "image": "images/wedding-day.jpg",
-    "appleMusic": "https://music.apple.com/us/album/wedding-day/1872203339?i=1872203340",
-    "spotify": "https://open.spotify.com/track/2jktCTlGkoOLksEzob1PZY?si=0f6fbe5668a64f93"
-  },
-  {
-    "title": "Cemetery Highway",
+    "title": "Hole In The Ground",
     "year": "2013",
-    "image": "images/cemetery-highway.jpg",
-    "appleMusic": "https://music.apple.com/us/album/cemetery-highway/1831228359?i=1831228360",
-    "spotify": "https://open.spotify.com/track/3BcQSTqI12cqsArb8W0RNI?si=72f20b20fd0d4f8e"
+    "image": "images/hole-in-the-ground.jpg",
+    "appleMusic": "https://music.apple.com/us/album/hole-in-the-ground/1839541027?i=1839541032",
+    "spotify": "https://open.spotify.com/track/2rj2AvZttXgzdUVW7v5s77?si=6b6b3c4d835d4d3a"
   },
   {
     "title": "Happiness And Rain",
@@ -441,25 +448,11 @@
     "spotify": "https://open.spotify.com/track/10bSZVlvmHypM28XonzoK0?si=de0546b1c1044981"
   },
   {
-    "title": "Hole In The Ground",
+    "title": "Cemetery Highway",
     "year": "2013",
-    "image": "images/hole-in-the-ground.jpg",
-    "appleMusic": "https://music.apple.com/us/album/hole-in-the-ground/1839541027?i=1839541032",
-    "spotify": "https://open.spotify.com/track/2rj2AvZttXgzdUVW7v5s77?si=6b6b3c4d835d4d3a"
-  },
-  {
-    "title": "Run Away",
-    "year": "2013",
-    "image": "images/run-away.jpg",
-    "appleMusic": "https://music.apple.com/us/album/run-away/1828940280?i=1828940281",
-    "spotify": "https://open.spotify.com/track/3B76OH6KFWKyvEtzA8yuV0?si=e41dc6ba793c4adb"
-  },
-  {
-    "title": "Trail",
-    "year": "2013",
-    "image": "images/trail.jpg",
-    "appleMusic": "https://music.apple.com/us/album/trail/1855309460?i=1855309461",
-    "spotify": "https://open.spotify.com/track/1L1IA59UpVlhltYPRHGLUG?si=ea549c5ee1b0480c"
+    "image": "images/cemetery-highway.jpg",
+    "appleMusic": "https://music.apple.com/us/album/cemetery-highway/1831228359?i=1831228360",
+    "spotify": "https://open.spotify.com/track/3BcQSTqI12cqsArb8W0RNI?si=72f20b20fd0d4f8e"
   },
   {
     "title": "Wonder About You",
@@ -469,11 +462,11 @@
     "spotify": "https://open.spotify.com/track/1hD1rJqkQNMRVM0WFqnbv7?si=a7c2a4fb6658467f"
   },
   {
-    "title": "Alone",
-    "year": "2014",
-    "image": "images/alone.jpg",
-    "appleMusic": "https://music.apple.com/us/album/alone/1859420583?i=1859420584",
-    "spotify": "https://open.spotify.com/track/7ngz6QkQL4WJw4VocN0tNu?si=891e8137011745df"
+    "title": "Run Away",
+    "year": "2013",
+    "image": "images/run-away.jpg",
+    "appleMusic": "https://music.apple.com/us/album/run-away/1828940280?i=1828940281",
+    "spotify": "https://open.spotify.com/track/3B76OH6KFWKyvEtzA8yuV0?si=e41dc6ba793c4adb"
   },
   {
     "title": "Back In The Bottle",
@@ -490,13 +483,6 @@
     "spotify": "https://open.spotify.com/track/3yxtBWzOtRoidyiColWa5m?si=5375c1e129dd40a8"
   },
   {
-    "title": "It's A Matter of Faith",
-    "year": "2014",
-    "image": "images/its-a-matter-of-faith.jpg",
-    "appleMusic": "https://music.apple.com/us/album/its-a-matter-of-faith/1869720816?i=1869720817",
-    "spotify": "https://open.spotify.com/track/2zgWJ71ajz46S5iInv2rsm?si=363c31668cd847a2"
-  },
-  {
     "title": "Nothing But Love (Alexa's Song)",
     "year": "2014",
     "image": "images/nothing-but-love-alexas-song.jpg",
@@ -504,11 +490,32 @@
     "spotify": "https://open.spotify.com/track/4tLPFuVBM00hutMPJlA6DZ?si=c169fb29db8a429c"
   },
   {
+    "title": "It's A Matter of Faith",
+    "year": "2014",
+    "image": "images/its-a-matter-of-faith.jpg",
+    "appleMusic": "https://music.apple.com/us/album/its-a-matter-of-faith/1869720816?i=1869720817",
+    "spotify": "https://open.spotify.com/track/2zgWJ71ajz46S5iInv2rsm?si=363c31668cd847a2"
+  },
+  {
+    "title": "Alone",
+    "year": "2014",
+    "image": "images/alone.jpg",
+    "appleMusic": "https://music.apple.com/us/album/alone/1859420583?i=1859420584",
+    "spotify": "https://open.spotify.com/track/7ngz6QkQL4WJw4VocN0tNu?si=891e8137011745df"
+  },
+  {
     "title": "Don't You Worry No More (Owen)",
-    "year": "2015",
+    "year": "2014",
     "image": "images/dont-you-worry-no-more-owen.jpg",
     "appleMusic": "https://music.apple.com/us/album/dont-you-worry-no-more-owen/1822768231?i=1822768232",
     "spotify": "https://open.spotify.com/track/6PGiRampWpBtCIrQOuUxtR?si=1031f642eaea4969"
+  },
+  {
+    "title": "Wiped Away",
+    "year": "2015",
+    "image": "images/wiped-away.jpg",
+    "appleMusic": "https://music.apple.com/us/album/wiped-away/1833634017?i=1833634018",
+    "spotify": "https://open.spotify.com/track/4iTmOn0cqwin1PzznkNF0t?si=a1e74b06de834830"
   },
   {
     "title": "Jefferson Highway",
@@ -519,17 +526,10 @@
   },
   {
     "title": "Long Live Your Dreams (Declan)",
-    "year": "2015",
+    "year": "2016",
     "image": "images/long-live-your-dreams-declan.jpg",
     "appleMusic": "https://music.apple.com/us/album/long-live-your-dreams-declan/1822768093?i=1822768094",
     "spotify": "https://open.spotify.com/track/4jqce7bf9GapnyXaBfsR0l?si=63e8dbfe1cef4302"
-  },
-  {
-    "title": "Wiped Away",
-    "year": "2015",
-    "image": "images/wiped-away.jpg",
-    "appleMusic": "https://music.apple.com/us/album/wiped-away/1833634017?i=1833634018",
-    "spotify": "https://open.spotify.com/track/4iTmOn0cqwin1PzznkNF0t?si=a1e74b06de834830"
   },
   {
     "title": "Waiting on Nana's Car (Owen)",
@@ -539,13 +539,6 @@
     "spotify": "https://open.spotify.com/track/2MC2p1MNeanL9zDiP560k6?si=aa565ff561014661"
   },
   {
-    "title": "Colin Crosby Wells",
-    "year": "2017",
-    "image": "images/colin-crosby-wells.jpg",
-    "appleMusic": "https://music.apple.com/us/album/colin-crosby-wells/1822768780?i=1822768781",
-    "spotify": "https://open.spotify.com/track/7uX8cDwdT3WOVIuotTrvfg?si=ab7855c2d4684cc8"
-  },
-  {
     "title": "Kelsey's Song",
     "year": "2017",
     "image": "images/kelseys-song.jpg",
@@ -553,18 +546,25 @@
     "spotify": "https://open.spotify.com/track/7xPFjeAfy3Ck1fDDnEYIQ1?si=2f96ce7447e143fb"
   },
   {
+    "title": "Colin Crosby Wells",
+    "year": "2017",
+    "image": "images/colin-crosby-wells.jpg",
+    "appleMusic": "https://music.apple.com/us/album/colin-crosby-wells/1822768780?i=1822768781",
+    "spotify": "https://open.spotify.com/track/7uX8cDwdT3WOVIuotTrvfg?si=ab7855c2d4684cc8"
+  },
+  {
+    "title": "I Have Not Forgotten You",
+    "year": "2017",
+    "image": "images/i-have-not-forgotten-you.jpg",
+    "appleMusic": "https://music.apple.com/us/album/i-have-not-forgotten-you/1842265557?i=1842265558",
+    "spotify": "https://open.spotify.com/track/2eAqPlpqT1wiQyGzK6QuvF?si=752c106db81f487b"
+  },
+  {
     "title": "Calista's Song",
     "year": "2018",
     "image": "images/calistas-song.jpg",
     "appleMusic": "https://music.apple.com/us/album/calistas-song/1822769037?i=1822769039",
     "spotify": "https://open.spotify.com/track/0Fts4GsQNTKmDYT6SOXBOL?si=4e8a2afecbd3479e"
-  },
-  {
-    "title": "I Have Not Forgotten You",
-    "year": "2018",
-    "image": "images/i-have-not-forgotten-you.jpg",
-    "appleMusic": "https://music.apple.com/us/album/i-have-not-forgotten-you/1842265557?i=1842265558",
-    "spotify": "https://open.spotify.com/track/2eAqPlpqT1wiQyGzK6QuvF?si=752c106db81f487b"
   },
   {
     "title": "Irish Goodbye",
@@ -603,14 +603,14 @@
   },
   {
     "title": "Madeline's Song",
-    "year": "2021",
+    "year": "2022",
     "image": "images/madelines-song.jpg",
     "appleMusic": "https://music.apple.com/us/album/madeline/1822769408?i=1822769410",
     "spotify": "https://open.spotify.com/track/6AMzRBd3haQ3qD4kUYS5hu?si=21e9761167f54849"
   },
   {
     "title": "Caleb, I Thought You Should Know",
-    "year": "2024",
+    "year": "2025",
     "image": "images/caleb-i-thought-you-should-know.jpg",
     "appleMusic": "https://music.apple.com/us/album/caleb-i-thought-you-should-know/1822769431?i=1822769432",
     "spotify": "https://open.spotify.com/track/5gm9AF6JzXRDQ1OwFTCbuf?si=41a7f444c5dd4133"
