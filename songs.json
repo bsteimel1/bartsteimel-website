@@ -621,5 +621,12 @@
     "image": "images/my-best-life.jpg",
     "appleMusic": "https://music.apple.com/us/album/my-best-life/1845842763?i=1845842766",
     "spotify": "https://open.spotify.com/track/0eoctYFJajwvPOdp6Zzwzd?si=aa20985f8bc1436d"
+  },
+  {
+    "title": "Poppy Robot",
+    "year": "2026",
+    "image": "images/poppy-robot.png",
+    "appleMusic": "https://music.apple.com/us/album/poppy-robot-single/1893682952",
+    "spotify": "https://open.spotify.com/track/2SQAhjMv6P2QzLZlYCWx1g?si=95da1aeddccb4cec"
   }
 ]
