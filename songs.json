@@ -273,6 +273,13 @@
     "spotify": "https://open.spotify.com/track/10gc8kGMFX4WGgz6xrhvma?si=3186849a31ac4578"
   },
   {
+    "title": "Raging River",
+    "year": "2007",
+    "image": "images/raging-river.png",
+    "appleMusic": "https://music.apple.com/us/album/raging-river-single/1895022812",
+    "spotify": "https://open.spotify.com/track/33mkHT69xBLSMmSoGAfeff?si=fcda017bef464695"
+  },
+  {
     "title": "Resolution Day",
     "year": "2007",
     "image": "images/resolution-day.jpg",
@@ -390,13 +397,6 @@
     "image": "images/drive-away.jpg",
     "appleMusic": "https://music.apple.com/us/album/drive-away/1835320536?i=1835320537",
     "spotify": "https://open.spotify.com/track/7kzbUw5Z5bZMz6crbdjLMI?si=c23c233664274d10"
-  },
-  {
-    "title": "Raging River",
-    "year": "2010",
-    "image": "images/raging-river.png",
-    "appleMusic": "https://music.apple.com/us/album/raging-river-single/1895022812",
-    "spotify": "https://open.spotify.com/track/33mkHT69xBLSMmSoGAfeff?si=fcda017bef464695"
   },
   {
     "title": "Hold On You",
