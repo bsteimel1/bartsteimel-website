@@ -112,6 +112,13 @@
     "spotify": "https://open.spotify.com/track/5kE0OGPhXpHVoRxPv3oDr8?si=fe613dda948f42f0"
   },
   {
+    "title": "Rock'n In The Synagogue",
+    "year": "1979",
+    "image": "images/rockn-in-the-synagogue.png",
+    "appleMusic": "https://music.apple.com/us/song/rockn-in-the-synagogue/6767947802",
+    "spotify": "https://open.spotify.com/track/57wv2wB64l1srG11OTyOx7?si=9c5877d0365c452b"
+  },
+  {
     "title": "Move It On Over Miss Prep",
     "year": "1980",
     "image": "images/move-it-on-over-miss-prep.jpg",
@@ -649,12 +656,5 @@
     "image": "images/i81-forever-begins.png",
     "appleMusic": "https://music.apple.com/us/album/i81-forever-begins/6766276968?i=6766276969",
     "spotify": "https://open.spotify.com/track/1ApUsUcLBJkkcCFwkIegVj?si=166bbeab2afe4185"
-  },
-  {
-    "title": "Rock'n In The Synagogue",
-    "year": "2026",
-    "image": "images/rockn-in-the-synagogue.png",
-    "appleMusic": "https://music.apple.com/us/song/rockn-in-the-synagogue/6767947802",
-    "spotify": "https://open.spotify.com/track/57wv2wB64l1srG11OTyOx7?si=9c5877d0365c452b"
   }
 ]
