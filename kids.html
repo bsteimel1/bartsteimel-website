@@ -110,6 +110,48 @@
       border: none;
     }
 
+    .playlist-section {
+      text-align: center;
+      padding: 2.5rem 2rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .playlist-section h2 {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+      font-weight: normal;
+    }
+
+    .playlist-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .playlist-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.65rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text);
+      background: var(--surface);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .playlist-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    .playlist-btn svg { flex-shrink: 0; }
+
     footer {
       text-align: center;
       padding: 2.5rem;
@@ -147,6 +189,24 @@
     <h1>Kids</h1>
     <p>Songs &amp; videos for the little ones</p>
   </header>
+
+  <section class="playlist-section">
+    <h2>Listen to the Kids Music Playlist</h2>
+    <div class="playlist-buttons">
+      <a class="playlist-btn" href="https://music.apple.com/us/playlist/bart-steimel-kids-favorites/pl.u-l30m6coWANW" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm3.5 5.5l-1 4.5c-.07.32-.36.5-.68.44l-2.32-.52v.58c0 .28-.22.5-.5.5s-.5-.22-.5-.5V9.5l-.5-.11V11c0 .28-.22.5-.5.5s-.5-.22-.5-.5V8.84L4.82 8.6c-.38-.08-.6-.46-.5-.84l.18-.8c.08-.34.4-.56.74-.5l4.76 1.06.64-2.88c.08-.36.44-.58.8-.5.36.08.58.44.5.8z" fill="currentColor"/>
+        </svg>
+        Apple Music
+      </a>
+      <a class="playlist-btn" href="https://open.spotify.com/playlist/6E82CbLefs2JzXPsNaCYle" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm3.67 11.54c-.14.22-.44.3-.66.15-1.82-1.11-4.1-1.36-6.8-.74-.26.06-.52-.1-.58-.36-.06-.26.1-.52.36-.58 2.95-.67 5.48-.38 7.52.86.23.14.3.43.16.67zm.98-2.18c-.18.28-.55.37-.83.19-2.08-1.28-5.26-1.65-7.72-.9-.3.09-.62-.08-.71-.38-.09-.3.08-.62.38-.71 2.82-.86 6.32-.44 8.69 1.03.28.17.37.54.19.77zm.08-2.27C10.15 5.6 6.3 5.47 3.98 6.17c-.36.11-.74-.09-.85-.45-.11-.36.09-.74.45-.85 2.68-.81 7.14-.66 9.96 1.07.33.19.43.61.24.93-.19.32-.6.43-.93.24-.01-.01-.02-.01-.02-.01z" fill="currentColor"/>
+        </svg>
+        Spotify
+      </a>
+    </div>
+  </section>
 
   <main class="video-grid">
 
