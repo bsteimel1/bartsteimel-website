@@ -89,4 +89,47 @@ function handleSignup(e) {
     if (e.key === 'Escape') closeModal({target: document.getElementById('catalogModal')});
   });
 
-document.addEventListener('DOMContentLoaded', buildCatalog);
+async function buildKidsCatalog() {
+  const grid = document.getElementById('kids-catalog-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('songs.json');
+    const songs = await res.json();
+    const kidsSongs = songs.filter(s => s.kids);
+    grid.innerHTML = kidsSongs.map(song => {
+      const safeTitle = song.title.replace(/'/g, "\\'");
+      const safeSpotify = song.spotify || '';
+      return `
+        <div class="catalog-item" onclick="openModal('${safeTitle}', '${song.appleMusic}', '${song.year}', '${safeSpotify}')">
+          <img src="${song.image}" alt="${safeTitle} cover art" loading="lazy">
+          <div class="catalog-overlay">
+            <span class="catalog-title">${song.title}</span>
+            <span class="catalog-year">${song.year}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.style.opacity = '1';
+          el.target.style.transform = 'translateY(0)';
+        }
+      });
+    });
+    grid.querySelectorAll('.catalog-item').forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(item);
+    });
+  } catch (err) {
+    console.error('Failed to load kids songs:', err);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  buildCatalog();
+  buildKidsCatalog();
+});
