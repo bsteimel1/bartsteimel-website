@@ -289,6 +289,7 @@
         </svg>
         Open in Spotify
       </a>
+      <button class="modal-story-btn" id="modalStoryBtn" onclick="openStoryViewer()">The Story Behind This Song</button>
       <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--mid);">Also available on Amazon Music,<br>YouTube Music & Pandora</p>
       <div style="display:flex; gap:0.75rem; justify-content:center; margin-top:1rem; flex-wrap:wrap;">
         <a id="modalSpotifyBtn" href="https://open.spotify.com/artist/2n7ZGuaqXqTJBbHKsr7H79" target="_blank" class="modal-service-btn">Spotify</a>
@@ -343,6 +344,27 @@
   <p>© 2026 Bart Steimel &nbsp;·&nbsp; All Rights Reserved</p>
 </footer>
 
+<!-- Story Viewer -->
+<div id="storyViewer" class="story-viewer">
+  <button class="story-viewer-close" onclick="closeStoryViewer()">✕</button>
+  <div class="story-viewer-layout">
+    <div class="story-viewer-art-col" id="storyViewerArtCol">
+      <img class="story-viewer-art" id="storyViewerArt" src="" alt="">
+      <p class="story-viewer-art-title" id="storyViewerArtTitle"></p>
+      <a class="story-viewer-listen-link" id="storyViewerListenLink" href="#" target="_blank">↗ Listen</a>
+    </div>
+    <div class="story-viewer-text-col">
+      <p class="story-eyebrow">The Story Behind the Song</p>
+      <h2 class="story-viewer-title" id="storyViewerTitle"></h2>
+      <div class="story-rule"></div>
+      <div class="story-body" id="storyViewerBody">
+        <p style="color:var(--mid);font-style:italic;">Loading…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

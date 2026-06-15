@@ -7,8 +7,10 @@ async function buildCatalog() {
     grid.innerHTML = songs.map(song => {
       const safeTitle = song.title.replace(/'/g, "\\'");
       const safeSpotify = song.spotify || '';
+      const safeStory = (song.story || '').replace(/'/g, "\\'");
+      const safeImage = (song.image || '').replace(/'/g, "\\'");
       return `
-        <div class="catalog-item" onclick="openModal('${safeTitle}', '${song.appleMusic}', '${song.year}', '${safeSpotify}')">
+        <div class="catalog-item" onclick="openModal('${safeTitle}', '${song.appleMusic}', '${song.year}', '${safeSpotify}', '${safeStory}', '${safeImage}')">
           <img src="${song.image}" alt="${safeTitle} cover art" loading="lazy">
           <div class="catalog-overlay">
             <span class="catalog-title">${song.title}</span>
@@ -63,7 +65,11 @@ function handleSignup(e) {
 
 
 
-  function openModal(title, link, year, spotifyLink) {
+  // Store current song for the story viewer
+  var currentSong = {};
+
+  function openModal(title, link, year, spotifyLink, storyFile, imagePath) {
+    currentSong = { title, link, year, spotifyLink, storyFile: storyFile || '', imagePath: imagePath || '' };
     document.getElementById('modalTitle').textContent = title;
     document.getElementById('modalYear').textContent = 'Written ' + year;
     document.getElementById('modalLink').href = link;
@@ -76,6 +82,8 @@ function handleSignup(e) {
       spotifyBtn.style.display = 'none';
       document.getElementById('modalSpotifyBtn').href = 'https://open.spotify.com/artist/2n7ZGuaqXqTJBbHKsr7H79';
     }
+    var storyBtn = document.getElementById('modalStoryBtn');
+    if (storyBtn) storyBtn.style.display = storyFile ? 'block' : 'none';
     document.getElementById('catalogModal').classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -86,8 +94,136 @@ function handleSignup(e) {
     }
   }
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeModal({target: document.getElementById('catalogModal')});
+    if (e.key === 'Escape') {
+      closeStoryViewer();
+      closeModal({target: document.getElementById('catalogModal')});
+    }
   });
+
+  // ── Story Viewer ──────────────────────────────────────────────────────────
+
+  if (typeof pdfjsLib !== 'undefined') {
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+  }
+
+  async function openStoryViewer() {
+    var title = currentSong.title;
+    var storyFile = currentSong.storyFile;
+    var imagePath = currentSong.imagePath;
+    var listenLink = currentSong.link;
+
+    // Close the catalog modal first
+    document.getElementById('catalogModal').classList.remove('active');
+
+    // Populate static fields
+    var artEl = document.getElementById('storyViewerArt');
+    artEl.src = imagePath;
+    artEl.alt = title + ' cover art';
+    document.getElementById('storyViewerArtCol').style.setProperty('--story-art-bg', 'url(' + imagePath + ')');
+    document.getElementById('storyViewerArtTitle').textContent = title;
+    document.getElementById('storyViewerListenLink').href = listenLink;
+    document.getElementById('storyViewerTitle').textContent = title;
+    document.getElementById('storyViewerBody').innerHTML =
+      '<p style="color:var(--mid);font-style:italic;">Loading the story…</p>';
+
+    document.getElementById('storyViewer').classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    // Load and render PDF
+    try {
+      if (typeof pdfjsLib === 'undefined') throw new Error('PDF library not loaded');
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+      var encodedStoryFile = storyFile.split('/').map(encodeURIComponent).join('/');
+    var pdf = await pdfjsLib.getDocument(encodedStoryFile).promise;
+      var allItems = [];
+      for (var p = 1; p <= pdf.numPages; p++) {
+        var page = await pdf.getPage(p);
+        var content = await page.getTextContent();
+        allItems = allItems.concat(content.items);
+      }
+
+      var paragraphs = pdfItemsToParagraphs(allItems, title);
+      document.getElementById('storyViewerBody').innerHTML =
+        paragraphs.map(function(text, i) {
+          return '<p class="' + (i === 0 ? 'story-lead' : '') + '">' + escapeHtml(text) + '</p>';
+        }).join('');
+    } catch (err) {
+      console.error('Story load error:', err);
+      document.getElementById('storyViewerBody').innerHTML =
+        '<p style="color:var(--mid);">Story could not be loaded.</p>';
+    }
+  }
+
+  function closeStoryViewer() {
+    var viewer = document.getElementById('storyViewer');
+    if (viewer) {
+      viewer.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function pdfItemsToParagraphs(items, songTitle) {
+    var nonEmpty = items.filter(function(i) { return i.str && i.str.trim(); });
+    if (!nonEmpty.length) return [];
+
+    // Sort top-to-bottom (PDF Y increases upward, so sort descending by Y)
+    nonEmpty.sort(function(a, b) {
+      var dy = b.transform[5] - a.transform[5];
+      if (Math.abs(dy) > 3) return dy;
+      return a.transform[4] - b.transform[4];
+    });
+
+    // Estimate line height (median font height)
+    var heights = nonEmpty.map(function(i) { return Math.abs(i.transform[3]); }).filter(function(h) { return h > 0; });
+    heights.sort(function(a, b) { return a - b; });
+    var medH = heights[Math.floor(heights.length / 2)] || 12;
+
+    // Group into visual lines
+    var lines = [];
+    var curLine = null, curY = null;
+    nonEmpty.forEach(function(item) {
+      var y = item.transform[5];
+      if (curY === null || Math.abs(y - curY) > medH * 0.6) {
+        if (curLine) lines.push({ y: curY, text: curLine });
+        curLine = item.str;
+        curY = y;
+      } else {
+        curLine += item.str;
+      }
+    });
+    if (curLine) lines.push({ y: curY, text: curLine });
+
+    // Group lines into paragraphs by detecting blank-line gaps
+    var paragraphs = [];
+    var paraLines = [];
+    for (var i = 0; i < lines.length; i++) {
+      if (i === 0) { paraLines.push(lines[i].text); continue; }
+      var gap = Math.abs(lines[i - 1].y - lines[i].y);
+      if (gap > medH * 1.8) {
+        var txt = paraLines.join(' ').trim();
+        if (txt) paragraphs.push(txt);
+        paraLines = [lines[i].text];
+      } else {
+        paraLines.push(lines[i].text);
+      }
+    }
+    var last = paraLines.join(' ').trim();
+    if (last) paragraphs.push(last);
+
+    // Strip leading title paragraph if it matches the song title
+    if (paragraphs.length && paragraphs[0].trim().toLowerCase() === songTitle.trim().toLowerCase()) {
+      paragraphs.shift();
+    }
+
+    return paragraphs;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
 
 async function buildKidsCatalog() {
   const grid = document.getElementById('kids-catalog-grid');
@@ -99,8 +235,10 @@ async function buildKidsCatalog() {
     grid.innerHTML = kidsSongs.map(song => {
       const safeTitle = song.title.replace(/'/g, "\\'");
       const safeSpotify = song.spotify || '';
+      const safeStory = (song.story || '').replace(/'/g, "\\'");
+      const safeImage = (song.image || '').replace(/'/g, "\\'");
       return `
-        <div class="catalog-item" onclick="openModal('${safeTitle}', '${song.appleMusic}', '${song.year}', '${safeSpotify}')">
+        <div class="catalog-item" onclick="openModal('${safeTitle}', '${song.appleMusic}', '${song.year}', '${safeSpotify}', '${safeStory}', '${safeImage}')">
           <img src="${song.image}" alt="${safeTitle} cover art" loading="lazy">
           <div class="catalog-overlay">
             <span class="catalog-title">${song.title}</span>
